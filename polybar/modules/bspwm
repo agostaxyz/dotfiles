@@ -1,0 +1,35 @@
+[module/bspwm]
+type = internal/bspwm
+enable-scroll = false
+
+;format = <label-state> <label-mode>
+
+ws-icon-0 = feed;
+ws-icon-1 = web;
+ws-icon-2 = code;
+ws-icon-3 = productivity;
+ws-icon-4 = gaming;
+ws-icon-5 = vm;
+ws-icon-6 = create;
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+label-active = %icon%
+label-focused = %icon%
+label-unfocused = %icon%
+label-urgent = %icon%
+label-visible = %icon%
+
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2

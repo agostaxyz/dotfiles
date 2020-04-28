@@ -1,0 +1,6 @@
+sudo ln -s /$HOME/git_workspace/dotfiles/fonts/fontsaga/ /usr/share/fonts/
+sudo ln -s /$HOME/git_workspace/dotfiles/.vimrc /home/cdsg
+sudo ln -s /$HOME/git_workspace/dotfiles/bspwm .config/
+sudo ln -s /$HOME/git_workspace/dotfiles/sxhkd .config/
+sudo ln -s /$HOME/git_workspace/dotfiles/.xinitrc ~/
+ 

@@ -1,0 +1,14 @@
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %a, %H:%M 
+time-alt = %A, %H:%M:%S 
+
+format-padding = 1
+format-underline = #0a6cf5
+
+label = %date% %time%

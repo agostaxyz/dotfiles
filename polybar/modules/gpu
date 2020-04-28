@@ -1,0 +1,9 @@
+[module/gpu]
+type = custom/script
+interval = 2
+format-prefix = "  "
+format = <label>
+exec = python .config/polybar/scripts/gpu.py -f '{percentage} {temp}'
+format-padding = 1
+format-underline = ${colors.nvidia}
+

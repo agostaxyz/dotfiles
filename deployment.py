@@ -2,17 +2,17 @@ import subprocess
 
 packageManager = "sudo pacman -Syu "
 aurManager = "yay "
-# Package categories
-packages = ["base", "cpu", "gpu", "productivity", "coding", "editing", "gaming", "drive"]
 # Packages
-base = ["reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox", "discord", "aur-surfshark-vpn", "aur-spotify"]
-cpu = ["amd","intel","both"]
-gpu = ["amd","nvidia", "both"]
-productivity = ["transmission-gtk", "pidgin", "aur-telegram-purple-git", "aur-notion-app"]
-coding = ["aur-github-desktop", "aur-visual-studio-code-bin", "python"]
-editing = ["krita", "blender", "aur-davinci-resolve"]
-gaming = ["lutris", "steam"]
-drive = ["amd-ucode", "intel-ucode", "dosfstools", "ntfs-3g"]
+base = ["zsh", "zsh-completions", "ranger", "libxft-bgra","mesa", "reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox-developer-edition", "neovim", "discord", "aur-surfshark-vpn", "aur-spotify", "chromium"]
+bspwm = ["aur-bspwm-git", "sxhkd", "xorg-xinit", "xorg-xrdb", "aur-polybar-git", "feh", "rofi","aur-st-luke-git"]
+entertainment = ["steam", "lutris", "aur-stremio", "aur-minecraft-launcher-beta"]
+comunication = ["telegram-desktop", "tutanota-desktop"]
+productivity = ["qbittorrent", "aur-notion-app"]
+dev = ["aur-github-desktop", "python", "arduino", "aur-visual-studio-code-bin", "elixir", "npm", "nodejs"]
+game-dev = ["blender", "aur-davinci-resolve", "aur-unreal-engine"]
+video-editing = ["inkscape", "aur-davinci-resolve"]
+engeenering = ["aur-freecad"]
+audio-editing = ["ardour"]
 
 #Funcions
 def prompt_Function ():

@@ -1,0 +1,9 @@
+[module/spotify]
+type = custom/script
+interval = 2
+format-prefix = " "
+format = <label>
+exec = python .config/polybar/scripts/spotify_status.py -f '{artist}: {song}'
+
+format-padding = 1
+format-underline = ${colors.spotify}

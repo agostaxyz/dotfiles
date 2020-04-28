@@ -1,0 +1,113 @@
+;-----------------------------------------------
+;
+;   █████╗ ██████╗  ██████╗ ██████╗ 
+;  ██╔══██╗██╔══██╗██╔════╝██╔════╝ 
+;  ██║░░╚═╝██║░░██║╚█████╗ ██║░░██╗ 
+;  ██║░░██╗██║░░██║ ╚═══██╗██║░░╚██╗
+;  ╚█████╔╝██████╔╝██████╔╝╚██████╔╝
+;   ╚════╝ ╚═════╝ ╚═════╝  ╚═════╝ 
+;
+; https://github.com/coldsaga/dotfiles
+;
+;-----------------------------------------------
+;
+; >> Importing Modules
+include-file = /home/$USER/.config/polybar/modules/rofi
+include-file = /home/$USER/.config/polybar/modules/bspwm
+include-file = /home/$USER/.config/polybar/modules/i3
+include-file = /home/$USER/.config/polybar/modules/mpd
+include-file = /home/$USER/.config/polybar/modules/spotify
+include-file = /home/$USER/.config/polybar/modules/xbacklight
+include-file = /home/$USER/.config/polybar/modules/alsa
+include-file = /home/$USER/.config/polybar/modules/pulseaudio
+include-file = /home/$USER/.config/polybar/modules/xkeyboard
+include-file = /home/$USER/.config/polybar/modules/memory
+include-file = /home/$USER/.config/polybar/modules/cpu
+include-file = /home/$USER/.config/polybar/modules/wlan
+include-file = /home/$USER/.config/polybar/modules/eth
+include-file = /home/$USER/.config/polybar/modules/battery
+include-file = /home/$USER/.config/polybar/modules/temperature
+include-file = /home/$USER/.config/polybar/modules/date
+include-file = /home/$USER/.config/polybar/modules/powermenu
+include-file = /home/$USER/.config/polybar/modules/gpu
+include-file = /home/$USER/.config/polybar/modules/vpn
+
+[colors]
+background = #333
+background-alt = #444
+foreground = #efefef
+foreground-alt = #555
+primary = #08b
+secondary = #e60053
+dark = #111
+alert = #f00
+alert-alt = #600
+
+cpu = #0071c5
+ram = #329934
+amd = #009A66
+intel = #0071c5
+nvidia = #76b900
+spotify = #1db954
+
+[bar/main]
+width = 100%
+height = 20
+radius = 3.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #-00000001
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+font-3 = fontsaga:pixelisize=10;1
+
+modules-left = bspwm rofi i3
+modules-center = 
+tray-position = center
+modules-right = mpd spotify xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+
+tray-padding = 2
+ 
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

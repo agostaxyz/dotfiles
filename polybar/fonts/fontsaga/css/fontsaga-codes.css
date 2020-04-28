@@ -1,0 +1,25 @@
+
+.icon-windows:before { content: '\e800'; } /* '' */
+.icon-wifi:before { content: '\e801'; } /* '' */
+.icon-sun:before { content: '\e802'; } /* '' */
+.icon-news:before { content: '\e803'; } /* '' */
+.icon-volume-3:before { content: '\e804'; } /* '' */
+.icon-volume-2:before { content: '\e805'; } /* '' */
+.icon-volume-1:before { content: '\e806'; } /* '' */
+.icon-volume-0:before { content: '\e807'; } /* '' */
+.icon-power:before { content: '\e808'; } /* '' */
+.icon-arch-linux:before { content: '\e809'; } /* '' */
+.icon-code:before { content: '\e80a'; } /* '' */
+.icon-cpu:before { content: '\e80b'; } /* '' */
+.icon-ram:before { content: '\e80c'; } /* '' */
+.icon-gpu:before { content: '\e80d'; } /* '' */
+.icon-music:before { content: '\e80e'; } /* '' */
+.icon-firefox:before { content: '\e840'; } /* '' */
+.icon-brightness:before { content: '\f020'; } /* '' */
+.icon-download:before { content: '\f02e'; } /* '' */
+.icon-upload:before { content: '\f02f'; } /* '' */
+.icon-gamepad:before { content: '\f11b'; } /* '' */
+.icon-tux:before { content: '\f17c'; } /* '' */
+.icon-steam:before { content: '\f1b6'; } /* '' */
+.icon-spotify:before { content: '\f1bc'; } /* '' */
+.icon-messaging:before { content: '\f1d8'; } /* '' */
