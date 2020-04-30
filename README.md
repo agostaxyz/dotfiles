@@ -1,9 +1,9 @@
 # Dotfiles
-![configuration image](/src/rice.png)  
+![rice image](/src/rice.png)  
 My arch dotfiles and shell script for deployment (see below).  
 
 ## Deployment
-Use this to install everything.
+Use this to install everything.  
 ```chmod +x deployment.sh```.  
 ```sh ./deployment.sh```.
 
