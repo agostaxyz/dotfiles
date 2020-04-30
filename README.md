@@ -3,7 +3,7 @@
 My arch dotfiles and shell script for deployment (see below).  
 
 ## Deployment
-Use this to install everything.  
+Use the following to install everything:  
 ```chmod +x deployment.sh```.  
 ```sh ./deployment.sh```.
 
