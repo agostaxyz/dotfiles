@@ -8,7 +8,7 @@ Use the following to install everything:
 ```sh ./deployment.sh```.
 
 **Be advised:**  
-deployment.sh will create symlinks from `/git_workspace/deployment` to ```./config```, if you want to use another directory, clone the files to the right directories or manually edit the file.  
+deployment.sh will create symlinks from `/git_workspace/deployment` to ```./config```, if you want to use another directory move the files to the right directories or manually edit the sh file.  
 
 ## Fontsaga ![version](https://img.shields.io/badge/version-0.1.0-red)  
  ![font image](/src/fontsaga.png)  
