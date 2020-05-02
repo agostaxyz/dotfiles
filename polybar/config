@@ -12,7 +12,7 @@
 ;-----------------------------------------------
 ;
 ; >> Importing Modules
-include-file = /home/$USER/.config/polybar/modules/rofi
+include-file = /home/$USER/.config/polybar/modules/rofimenu
 include-file = /home/$USER/.config/polybar/modules/bspwm
 include-file = /home/$USER/.config/polybar/modules/i3
 include-file = /home/$USER/.config/polybar/modules/mpd
@@ -77,7 +77,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = fontsaga:pixelisize=10;1
 
-modules-left = bspwm rofi i3
+modules-left = rofimenu bspwm i3
 modules-center = 
 tray-position = center
 modules-right = mpd spotify xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu

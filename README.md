@@ -1,15 +1,12 @@
-# Dotfiles
-![rice image](/src/rice.png)  
-My arch dotfiles and shell script for deployment (see below).  
+# Dotfiles and Deployment
+My arch linux dotfiles and shell script.  
+I recommend you use some kind of [encryption](https://wiki.archlinux.org/index.php/Disk_encryption) on arch linux, I use [dm-crypt](https://wiki.archlinux.org/index.php/Dm-crypt).  
+
+## Dotfiles
+My Dotfiles are managed via [GNU stow](https://www.gnu.org/software/stow/).
 
 ## Deployment
-Use the following to install everything:  
-```chmod +x deployment.sh```.  
-```sh ./deployment.sh```.
-
-**Be advised:**  
-deployment.sh will create symlinks from `/git_workspace/deployment` to ```./config```, if you want to use another directory move the files to the right directories or manually edit the sh file.  
-
-## Fontsaga ![version](https://img.shields.io/badge/version-0.1.0-red)  
- ![font image](/src/fontsaga.png)  
-Fontsaga was made by me and it's under the MIT license, but know I don't hold rights for the proprietary software images and logos, it's just a reinterpretation.
+deployment.sh is a simple linux shell script to easily download my arch and AUR packages.
+  
+To run it use ```chmod +x deployment.sh```.  
+and then ```sh ./deployment.sh```.
