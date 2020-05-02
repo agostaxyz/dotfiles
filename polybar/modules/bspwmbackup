@@ -20,21 +20,16 @@ label-unfocused = %icon%
 label-urgent = %icon%
 label-visible = %icon%
 
-label-active-underline = ${colors.blue}
-label-active-background = ${colors.black-alt}
-label-active-padding = 2
-
-label-focused-background = #f00
-label-focused-underline= #ef0 
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-background = ${colors.background-alt}
 label-occupied-padding = 2
 
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %icon%
-label-empty-foreground = ${colors.white-alt}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
