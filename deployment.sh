@@ -34,7 +34,7 @@ chmod +x /home/$USER/.config/sxhkd/sxhkdrc
 # Update repos and install must-have Software.
 sudo xbps-install -Suy
 sudo xbps-install -Suy git vim python NetworkManager inetutils nodejs cmake htop libpulseaudio curl xcb-util xcb-util-keysyms xcb-util-wm inetutils
-sudo xbps-install -Suy xorg xinit libX11 urxvt rxvt-unicode alsa-lib   
+sudo xbps-install -Suy xtools xorg xinit libX11 urxvt rxvt-unicode alsa-lib   
 sudo xbps-install -Suy bspwm polybar neovim zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 git clone https://github.com/Coldsaga/dotfiles.git /home/$USER/git_workspace/
 
