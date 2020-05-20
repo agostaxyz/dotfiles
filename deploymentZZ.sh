@@ -1,9 +1,4 @@
 choose_function () {
-    pacman = "sudo pacman -Syu reflector yay stow noto-fonts ttf-roboto ttf-croscore firefox discord "
-    pacman = "${pacman} test " 
-
-    aur = "yay surfshark-vpn spotify "
-    aur = "${aur} test "
 
     echo "Welcome to the fast deployment command wizard!"
     echo "Choose the packages to install."

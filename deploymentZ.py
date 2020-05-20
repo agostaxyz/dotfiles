@@ -3,7 +3,7 @@ import subprocess
 packageManager = "sudo pacman -Syu "
 aurManager = "yay "
 # Packages
-base = ["zsh", "zsh-completions", "ranger", "libxft-bgra","mesa", "reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox-developer-edition", "neovim", "discord", "aur-surfshark-vpn", "aur-spotify", "chromium"]
+base = ["zsh", "zsh-completions", "ranger", "mesa", "reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox-developer-edition", "neovim", "discord", "aur-surfshark-vpn", "aur-spotify", "chromium"]
 bspwm = ["aur-bspwm-git", "sxhkd", "xorg-xinit", "xorg-xrdb", "aur-polybar-git", "feh", "rofi","aur-st-luke-git"]
 entertainment = ["steam", "lutris", "aur-stremio", "aur-minecraft-launcher-beta"]
 comunication = ["telegram-desktop", "tutanota-desktop"]
