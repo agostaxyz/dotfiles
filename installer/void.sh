@@ -11,7 +11,7 @@ function install () {
     sudo xbps-install -Suy git curl NetworkManager neovim make python inetutils nodejs cmake htop libpulseaudio curl xcb-util xcb-util-keysyms xcb-util-wm inetutils xtools alsa-lib qbittorrent noto-fonts ttf-roboto ttf-croscore  exiftool
     
     # Auxiliary software
-    sudo xbps-install -Suy firefox surfshark-vpn spotify neofetch zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting lutris
+    sudo xbps-install -Suy firefox chromium surfshark-vpn spotify neofetch zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting lutris
     # Not yet available on Package Manager
     # discord
 }
