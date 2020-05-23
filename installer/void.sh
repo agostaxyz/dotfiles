@@ -31,7 +31,7 @@ function cdesktop () {
 function all () {
     sudo xbps-install -Suy blender krita steam
     # Not yet available on Package Manager
-    # DaVinci-resolve firefox-developer-edition github-desktop surfshark-vpn
+    # davinci-resolve firefox-developer-edition github-desktop surfshark-vpn openscad-git 
     cdesktop
     full-productivity
 }
