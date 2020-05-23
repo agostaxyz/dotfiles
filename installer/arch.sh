@@ -1,49 +1,48 @@
-# Arch Installation
-# agosta.dev/dotfiles
+import subprocess
 
-# Create Directories
-mkdir /home/$USER/Documents /home/$USER/Downloads /home/$USER/git_workspace /home/$USER/.config /home/$USER/.config/bspwm /home/$USER/.config/sxhkd /home/$USER/.config/polybar /home/$USER/.config/nvim
+packageManager = "sudo pacman -Syu "
+aurManager = "yay "
+# Packages
+base = ["zsh", "zsh-completions", "ranger", "mesa", "reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox-developer-edition", "neovim", "discord", "aur-surfshark-vpn", "aur-spotify", "chromium"]
+bspwm = ["aur-bspwm-git", "sxhkd", "xorg-xinit", "xorg-xrdb", "aur-polybar-git", "feh", "rofi","aur-st-luke-git"]
+entertainment = ["steam", "lutris", "aur-stremio", "aur-minecraft-launcher-beta"]
+comunication = ["telegram-desktop", "tutanota-desktop"]
+productivity = ["qbittorrent", "aur-notion-app"]
+dev = ["aur-github-desktop", "python", "arduino", "aur-visual-studio-code-bin", "elixir", "npm", "nodejs"]
+game-dev = ["blender", "aur-davinci-resolve", "aur-unreal-engine"]
+video-editing = ["inkscape", "aur-davinci-resolve"]
+engeenering = ["aur-freecad"]
+audio-editing = ["ardour"]
 
-# Void linux stuff
-# Allow multilib and nonfree repo.
-sudo xbps-install -Suy void-repo-nonfree void-repo-multilib
+#Funcions
+def prompt_Function ():
+    j[i] = input("({}/{})Install the {} Package? (y/n)".format(i+1, len(packages), packages[i]))
+    
+    if j[i] == "y":
+        print("if test")
+        allpack = allpack + packages[i]
+    
+    else:
+        print("else test") 
 
-# Hard Linking files
-sudo ln /$HOME/git_workspace/dotfiles/bspwm/bspwmrc .config/bspwm/
-sudo ln /$HOME/git_workspace/dotfiles/sxhkd/sxhkdrc .config/sxhkd/
-sudo ln /$HOME/git_workspace/dotfiles/.xinitrc ~/
-sudo ln /$HOME/git_workspace/dotfiles/fonts/fontsaga/ /usr/share/fonts/
-sudo ln /$HOME/git_workspace/dotfiles/.Xresources ~/
-sudo ln /$HOME/git_workspace/dotfiles/compton.conf .config/
-sudo ln /$HOME/git_workspace/dotfiles/nvim/init.vim .config/nvim/
-# sudo ln /$HOME/git_workspace/dotfiles/polybars/modules/ .config/polybar/
-# sudo ln /$HOME/git_workspace/dotfiles/polybars/cdbar .config/polybar/
+    pacman = "sudo pacman -Syu"
 
+def install_Function():
+    subprocess.run([packagesInstall])
+    subprocess.run([aurInstall])
 
-sudo ln /$HOME/git_workspace/dotfiles/neofetch/config.conf .config/neofetch/
-sudo ln /$HOME/git_workspace/dotfiles/.zshrc ~/
+# Vars and lists
+i = 0
+j = [list] * len(packages)
+allpack = "test"
+packageInstall = packageManager
+aurInstall = aurManager
 
-# Update repos and install must-have Software.
-sudo xbps-install -Suy git vim make NetworkManager python inetutils nodejs cmake htop neofetch libpulseaudio curl xcb-util xcb-util-keysyms xcb-util-wm inetutils
-sudo xbps-install -Suy xtools xorg xinit libX11 rxvt-unicode alsa-lib   
-sudo xbps-install -Suy sxhkd xinit libxcb lxappearance dmenu conky tint2 dzen2 bspwm polybar neovim zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
-git clone https://github.com/Coldsaga/dotfiles.git /home/$USER/git_workspace/
+while i < len(packages):
+    prompt_Function()
+    i=i+1
 
-echo 'sxhkd &' >> ~/.Xinitrc
-echo 'exec bspwm' >> ~/.Xinitrc
-echo 'polybar main &' >> ~/.config/bspwm/bspwmrc
-
-# Changing file mode
-chmod +x /home/$USER/.config/bspwm/bspwmrc
-chmod +x /home/$USER/.config/sxhkd/sxhkdrc
-chmod +x git_workspace/dotfiles/private/script.sh
-
-# INSERT HERE Link xstart to runit
-sh git_workspace/dotfiles/private/script.sh
-
-echo 'Choose a polybar'
-# setup Polybar
-# echo "Which polybar do you want?"
-# ls /home/git_workspace/dotfiles/polybars
-# read -p bar
-# sudo ln /home/git_workspace/dotfiles/polybars/$bar .config/polybar/
+print(j)
+print(allpack)
+print(packageInstall)
+print(aurInstall)
