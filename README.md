@@ -2,9 +2,9 @@
 My Void Linux dotfiles and shell script.  
 [preview.jpg](preview.jpg)  
 
+### Installation  
+**Requires ```curl``` and ```git```**   
 
-### Setup   
-**REQUIRED:** ```curl``` and ```git```  
 ```curl -LO https://dotfiles.agosta.dev/installer.sh```  
 then  
 ```sh deployment.sh```
