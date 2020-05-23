@@ -9,7 +9,7 @@ function install () {
     yay -Syu curl git curl NetworkManager neovim make python inetutils nodejs cmake htop libpulseaudio curl xcb-util xcb-util-keysyms xcb-util-wm inetutils xtools alsa-lib qbittorrent noto-fonts ttf-roboto ttf-croscore exiftool
     
     # Auxiliary software
-    yay firefox chromium surfshark-vpn spotify neofetch zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting lutris
+    yay firefox chromium surfshark-vpn spotify neofetch zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting lutris barrier
 }
 
 function cdesktop () {
