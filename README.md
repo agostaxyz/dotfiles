@@ -1,7 +1,9 @@
 # Dotfiles and Deployment
 My Void Linux dotfiles and shell script.  
 [preview.jpg](preview.jpg)  
-
+  
+[More info](https://github.com/Coldsaga/dotfiles/wiki)  
+  
 ### Setup:
 ```curl -LO https://dotfiles.agosta.dev/deployment.sh```  
 then  
