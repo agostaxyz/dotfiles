@@ -1,6 +1,6 @@
 # agosta.dev/dotfiles
 # Create Directories
-mkdir /home/$USER/Documents /home/$USER/Downloads /home/$USER/git_workspace /home/$USER/.config /home/$USER/.config/bspwm /home/$USER/.config/sxhkd /home/$USER/.config/polybar /home/$USER/.config/nvim
+sudo mkdir /home/$USER/Documents /home/$USER/Downloads /home/$USER/git_workspace /home/$USER/.config /home/$USER/.config/bspwm /home/$USER/.config/sxhkd /home/$USER/.config/polybar /home/$USER/.config/nvim
 
 # Void linux stuff
 # Allow multilib and nonfree repo.
