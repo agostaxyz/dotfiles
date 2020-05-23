@@ -1,48 +1,33 @@
-import subprocess
+# Arch Installation
+# agosta.dev/dotfiles
 
-packageManager = "sudo pacman -Syu "
-aurManager = "yay "
-# Packages
-base = ["zsh", "zsh-completions", "ranger", "mesa", "reflector", "yay", "stow", "noto-fonts", "ttf-roboto", "ttf-croscore", "firefox-developer-edition", "neovim", "discord", "aur-surfshark-vpn", "aur-spotify", "chromium"]
-bspwm = ["aur-bspwm-git", "sxhkd", "xorg-xinit", "xorg-xrdb", "aur-polybar-git", "feh", "rofi","aur-st-luke-git"]
-entertainment = ["steam", "lutris", "aur-stremio", "aur-minecraft-launcher-beta"]
-comunication = ["telegram-desktop", "tutanota-desktop"]
-productivity = ["qbittorrent", "aur-notion-app"]
-dev = ["aur-github-desktop", "python", "arduino", "aur-visual-studio-code-bin", "elixir", "npm", "nodejs"]
-game-dev = ["blender", "aur-davinci-resolve", "aur-unreal-engine"]
-video-editing = ["inkscape", "aur-davinci-resolve"]
-engeenering = ["aur-freecad"]
-audio-editing = ["ardour"]
+function install () {
+    # Insert here code to enable AUR
+    sudo Pacman -Syu yay
 
-#Funcions
-def prompt_Function ():
-    j[i] = input("({}/{})Install the {} Package? (y/n)".format(i+1, len(packages), packages[i]))
+    # Must have software
+    yay -Syu curl git curl NetworkManager neovim make python inetutils nodejs cmake htop libpulseaudio curl xcb-util xcb-util-keysyms xcb-util-wm inetutils xtools alsa-lib qbittorrent noto-fonts ttf-roboto ttf-croscore exiftool
     
-    if j[i] == "y":
-        print("if test")
-        allpack = allpack + packages[i]
-    
-    else:
-        print("else test") 
+    # Auxiliary software
+    yay firefox chromium surfshark-vpn spotify neofetch zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting lutris
+}
 
-    pacman = "sudo pacman -Syu"
+function cdesktop () {
+    yay sxhkd xinit libxcb lxappearance dmenu conky tint2 dzen2 bspwm polybar xorg xinit libX11 rxvt-unicode
 
-def install_Function():
-    subprocess.run([packagesInstall])
-    subprocess.run([aurInstall])
+    # Configuring needed files
+    echo 'sxhkd &' >> ~/.Xinitrc
+    echo 'exec bspwm' >> ~/.Xinitrc
+    echo 'polybar main &' >> ~/.config/bspwm/bspwmrc
+    chmod +x /home/$USER/.config/bspwm/bspwmrc
+    chmod +x /home/$USER/.config/sxhkd/sxhkdrc
+    chmod +x git_workspace/dotfiles/private/script.sh
+}
 
-# Vars and lists
-i = 0
-j = [list] * len(packages)
-allpack = "test"
-packageInstall = packageManager
-aurInstall = aurManager
+function all () {
+    yay blender krita steam davinci-resolve firefox-developer-edition github-desktop surfshark-vpn
+    cdesktop openscad-git
+    full-productivity
+}
 
-while i < len(packages):
-    prompt_Function()
-    i=i+1
-
-print(j)
-print(allpack)
-print(packageInstall)
-print(aurInstall)
+install
