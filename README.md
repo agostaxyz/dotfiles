@@ -1,4 +1,4 @@
-# (FOR TESTING) Dotfiles and Installer
+# Dotfiles and Installer
 My Void Linux dotfiles and shell script.  
 [preview.jpg](preview.jpg)  
 
@@ -6,6 +6,12 @@ My Void Linux dotfiles and shell script.
 **Requires ```curl``` and ```git```**   
 
 ```curl -LO https://dotfiles.agosta.dev/installer.sh```  
+  
+[More info](https://github.com/Coldsaga/dotfiles/wiki)  
+  
+### Setup:
+```curl -LO https://dotfiles.agosta.dev/deployment.sh```  
+
 then  
 ```sh deployment.sh```
 
