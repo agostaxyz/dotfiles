@@ -3,7 +3,7 @@ My Void Linux dotfiles and shell script.
 [preview.jpg](preview.jpg)  
 
 ### Setup:
-```curl -LO https://agosta.dev/dotfiles/deployment.sh```  
+```curl -LO https://dotfiles.agosta.dev/deployment.sh```  
 then  
 ```sh deployment.sh```
 
