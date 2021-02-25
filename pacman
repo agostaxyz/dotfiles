@@ -1,0 +1,21 @@
+main (
+sudo
+git
+mercurial
+curl
+coreutils
+util-linux
+vim
+python
+)
+
+arch (
+man-db
+man-pages
+neovim
+aur-vim-plug
+zsh
+zsh-completion
+powerline-fonts
+aur-zsh-theme-powerlevel9k-git
+)
