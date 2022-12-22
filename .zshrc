@@ -16,7 +16,7 @@ compinit
 # End of lines added by compinstall
 
 
-alias please='sudo'
+alias please='sudo $(fc -ln -1)'
 alias pa='sudo pacman -Syu'
 alias nv='nvim'
 alias c='clear'
