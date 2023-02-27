@@ -1,0 +1,7 @@
+Name=Application Name
+Comment=Application description
+Icon=/opt/firefox/browser/chrome/icon/default/default128.png
+Exec=/opt/firefox/firefox
+Terminal=false
+Categories=Browser;
+StartwMClass=firefox-aurora
