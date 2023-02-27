@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=InteliJ Idea
+Comment=Development tool
+Icon=/opt/ideaIU-2022.3.2/idea-IU-223.8617.56/bin/idea.png
+Exec=/opt/ideaIU-2022.3.2/idea-IU-223.8617.56/bin/idea.sh
+Terminal=false
+Type=Application
+StartwMClass=jetbrains-idea
