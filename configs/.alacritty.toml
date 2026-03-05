@@ -1,0 +1,17 @@
+[font.normal]
+family="Roboto Mono"
+style="Regular"
+
+[window]
+opacity = 0.85
+
+[keyboard]
+bindings = [
+  { key = "PageUp",   action = "ScrollPageUp"   },
+  { key = "PageDown", action = "ScrollPageDown"  },
+]
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/github_dark.toml"
+]
